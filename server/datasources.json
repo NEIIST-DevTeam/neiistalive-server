@@ -1,0 +1,10 @@
+{
+	"memory": {
+		"name": "memory",
+		"connector": "memory"
+	},
+	"transient": {
+		"name": "transient",
+		"connector": "transient"
+	}
+}

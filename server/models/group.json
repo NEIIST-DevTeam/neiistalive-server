@@ -1,0 +1,58 @@
+{
+	"name": "Group",
+	"plural": "groups",
+	"base": "PersistedModel",
+	"idInjection": true,
+	"indexes": {
+		"slug_index": {
+			"keys": {
+				"slug": 1
+			},
+			"options": {
+				"unique": true
+			}
+		}
+	},
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"name": {
+			"type": "string",
+			"required": true
+		},
+		"slug": {
+			"type": "string",
+			"required": false
+		},
+		"integrations": {
+			"type": {
+				"type": {
+			      "type": "string",
+			      "required": true
+			    },
+			    "permissions": {
+			      "type": [
+			        {
+			          "type": {
+			            "type": "string",
+			            "required": true
+			          }
+			        }
+			      ],
+			      "required": true
+			    }
+			}
+		}
+	},
+	"validations": [],
+	"relations": {
+		"members": {
+			"type": "hasMany",
+			"model": "Member",
+			"through": "MemberGroups"
+		}
+	},
+	"acls": [],
+	"methods": {}
+}
