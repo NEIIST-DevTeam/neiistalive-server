@@ -1,0 +1,33 @@
+{
+	"name": "Member",
+	"plural": "members",
+	"base": "User",
+	"idInjection": true,
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"name": {
+			"type": "string",
+			"required": true
+		},
+		"fullname": {
+			"type": "string",
+			"required": true
+		},
+		"phone": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"validations": [],
+	"relations": {
+		"groups": {
+			"type": "hasMany",
+			"model": "Group",
+			"through": "MemberGroups"
+		}
+	},
+	"acls": [],
+	"methods": {}
+}

@@ -1,0 +1,28 @@
+{
+	"name": "MemberGroups",
+	"base": "PersistedModel",
+	"idInjection": true,
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"since": {
+			"type": "Date",
+			"required": false,
+			"default": "$now"
+		}
+	},
+	"validations": [],
+	"relations": {
+		"group": {
+			"type": "belongsTo",
+			"model": "Group"
+		},
+		"member": {
+			"type": "belongsTo",
+			"model": "Member"
+		}
+	},
+	"acls": [],
+	"methods": {}
+}
