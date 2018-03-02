@@ -33,12 +33,10 @@
 		"type": "git",
 		"url": "https://github.com/NEIIST-DevTeam/neiistalive-server.git"
 	},
-	"author": [
-		{
-			"name": "NEIIST",
-			"email": "neiist@tecnico.ulisboa.pt"
-		}
-	],
+	"author": {
+		"name": "NEIIST",
+		"email": "neiist@tecnico.ulisboa.pt"
+	},
 	"contributors": [
 		{
 			"name": "Luis Ávila",
