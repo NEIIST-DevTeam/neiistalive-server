@@ -61,6 +61,7 @@ module.exports = function(Member) {
 					data: data.photo.data
 				},
 				email: data.email,
+				// Dummy password. Users log-in through fenix
 				password: Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 			});
 		}
