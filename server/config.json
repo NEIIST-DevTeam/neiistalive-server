@@ -1,7 +1,7 @@
 {
 	"restApiRoot": "/api",
 	"host": "",
-	"port": 80,
+	"port": 3000,
 	"remoting": {
 		"context": false,
 		"rest": {
