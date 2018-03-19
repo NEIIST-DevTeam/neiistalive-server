@@ -43,6 +43,7 @@ module.exports = function(Group) {
 
 	Group.prototype.removeMember = async function(memberId) {
 		const member = await this.member.get();
+		app.forceID(memberId);
 
 		const entry = await app.models.MemberGroups.find({
 			where: {

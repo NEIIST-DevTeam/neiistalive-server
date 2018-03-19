@@ -40,4 +40,12 @@ module.exports = function(app) {
 	app.message = function(id) {
 		return app.errors[id] || 'Unknown';
 	};
+
+	app.forceID = function(id){
+		return id.id || id;
+	}
+
+	app.forceInstance = function(id){
+		
+	}
 };
