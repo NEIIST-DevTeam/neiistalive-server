@@ -14,4 +14,11 @@ module.exports = {
 		connector: 'mongodb',
 		allowExtendedOperators: true,
 	},
+	fenixedu: {
+		'fenix_url': 'https://fenix.tecnico.ulisboa.pt/oauth/',
+		'api_url': 'https://fenix.tecnico.ulisboa.pt/api/fenix/v1/',
+		'redirect_url': 'http://localhost:3000/api/members/login-fenixedu',
+		'client_id': '',
+		'client_secret': ''
+	}
 };

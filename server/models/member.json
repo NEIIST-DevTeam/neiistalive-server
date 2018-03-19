@@ -2,22 +2,30 @@
 	"name": "Member",
 	"plural": "members",
 	"base": "User",
-	"idInjection": true,
+	"idInjection": false,
 	"options": {
 		"validateUpsert": true
 	},
 	"properties": {
+		"username": {
+			"type": "string",
+			"id": true
+		},
 		"name": {
 			"type": "string",
 			"required": true
 		},
-		"fullname": {
+		"displayName": {
 			"type": "string",
 			"required": true
 		},
 		"phone": {
 			"type": "string",
-			"required": true
+			"required": false
+		},
+		"photo": {
+			"type": "object",
+			"required": false	
 		}
 	},
 	"validations": [],
@@ -28,6 +36,13 @@
 			"through": "MemberGroups"
 		}
 	},
-	"acls": [],
+	"acls": [
+		{
+			"permission": "ALLOW",
+			"principalType": "ROLE",
+			"principalId": "$everyone",
+			"property": "fenixLogin"
+		}
+	],
 	"methods": {}
 }

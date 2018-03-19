@@ -11,6 +11,29 @@
 			"./mixins"
 		]
 	},
+	"AccessToken": {
+		"dataSource": "mongoDB",
+		"public": false,
+		"relations": {
+		  "user": {
+			"type": "belongsTo",
+			"model": "Member",
+			"foreignKey": "userId"
+		  }
+		}
+	},
+	"Role": {
+		"dataSource": "mongoDB",
+		"public": false
+	},
+	"RoleMapping": {
+		"dataSource": "mongoDB",
+		"public": false
+	},
+	"ACL": {
+		"dataSource": "mongoDB",
+		"public": false
+	},
 	"Member": {
 		"dataSource": "mongoDB",
 		"public": true

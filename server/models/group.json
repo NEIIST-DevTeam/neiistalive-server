@@ -28,18 +28,18 @@
 		"integrations": {
 			"type": {
 				"type": {
-			      "type": "string",
-			      "required": true
+			      	"type": "string",
+			      	"required": true
 			    },
 			    "permissions": {
-			      "type": [
-			        {
-			          "type": {
-			            "type": "string",
-			            "required": true
-			          }
-			        }
-			      ],
+			    	"type": [
+						{
+							"type": {
+								"type": "string",
+								"required": true
+							}
+						}
+			      	],
 			      "required": true
 			    }
 			}
