@@ -16,6 +16,9 @@
 			"required": true,
 			"id": true
 		},
+		"model": {
+			"type": "string",
+			"required": true
 		},
 		"integrations": {
 			"type": {
