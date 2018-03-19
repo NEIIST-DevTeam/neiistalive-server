@@ -2,17 +2,7 @@
 	"name": "Group",
 	"plural": "groups",
 	"base": "PersistedModel",
-	"idInjection": true,
-	"indexes": {
-		"slug_index": {
-			"keys": {
-				"slug": 1
-			},
-			"options": {
-				"unique": true
-			}
-		}
-	},
+	"idInjection": false,
 	"options": {
 		"validateUpsert": true
 	},
@@ -23,7 +13,9 @@
 		},
 		"slug": {
 			"type": "string",
-			"required": false
+			"required": true,
+			"id": true
+		},
 		},
 		"integrations": {
 			"type": {
