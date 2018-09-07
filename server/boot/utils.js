@@ -41,11 +41,11 @@ module.exports = function(app) {
 		return app.errors[id] || 'Unknown';
 	};
 
-	app.forceID = function(id){
+	app.forceID = function(id) {
 		return id.id || id;
-	}
+	};
 
-	app.forceInstance = function(id){
-		
-	}
+	app.forceInstance = function(id) {
+
+	};
 };
