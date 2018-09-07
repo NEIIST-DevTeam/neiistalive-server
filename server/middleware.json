@@ -34,6 +34,11 @@
 	"auth": {},
 	"parse": {},
 	"routes": {
+		"./middleware/groups": {
+			"paths": [
+				"${restApiRoot}"
+			]
+		},
 		"loopback#rest": {
 			"paths": [
 				"${restApiRoot}"

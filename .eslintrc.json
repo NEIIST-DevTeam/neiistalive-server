@@ -10,7 +10,7 @@
 		}],
 		"no-mixed-spaces-and-tabs": "error",
 		"no-tabs": 0,
-		"max-len": ["error", 100],
+		"max-len": ["error", 130],
 		"no-trailing-spaces": "error"
 	}
 }
